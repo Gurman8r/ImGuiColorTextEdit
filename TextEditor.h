@@ -13,6 +13,10 @@
 #include <regex>
 #include <imgui/imgui.h>
 
+#ifdef _MSC_VER
+#pragma warning(disable: 4251) // type1 needs to have dll-interface to be used by type2
+#endif
+
 namespace ImGui
 {
 	class IMGUI_API TextEditor
